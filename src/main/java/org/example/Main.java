@@ -25,9 +25,9 @@ public class Main {
         System.out.println("LastName: " + person3.getLastName());
         System.out.println("Age: " + person3.getAge());
         System.out.println("Is Teen: " + person3.isTeen());
-        System.out.println("Address: " + person3.address);
-        System.out.println("Phone: " + person3.phoneNumber);
-        System.out.println("Email: " + person3.email);
+        System.out.println("Address: " + person3.getAddress()); // Access via getter
+        System.out.println("Phone: " + person3.getPhoneNumber()); // Access via getter
+        System.out.println("Email: " + person3.getEmail()); // Access via getter
 
         // Wall sınıfından nesne oluşturuluyor
         Wall wall = new Wall(5, 4);

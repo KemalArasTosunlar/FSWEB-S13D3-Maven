@@ -6,7 +6,7 @@ public class Person {
     private String lastName;
     private int age;
 
-    // Eklediğimiz instance variables
+    // Additional instance variables
     private String address;
     private String phoneNumber;
     private String email;
@@ -26,7 +26,20 @@ public class Person {
         this.email = email;
     }
 
-    // Methods
+    // Getter methods for address, phoneNumber, and email
+    public String getAddress() {
+        return address;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    // Methods for firstName, lastName, age
     public String getFirstName() {
         return firstName;
     }

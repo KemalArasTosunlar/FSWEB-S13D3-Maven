@@ -7,8 +7,9 @@ public class Wall {
 
     // Constructor for width and height
     public Wall(double width, double height) {
-        this.width = width > 0 ? width : 0;  // Ensure non-negative values
-        this.height = height > 0 ? height : 0;  // Ensure non-negative values
+        // Set to 0 if negative values are provided
+        this.width = Math.max(width, 0);  // Ensure non-negative width
+        this.height = Math.max(height, 0);  // Ensure non-negative height
     }
 
     // Methods
@@ -21,11 +22,11 @@ public class Wall {
     }
 
     public void setWidth(double width) {
-        this.width = width >= 0 ? width : 0;  // Ensure non-negative values
+        this.width = Math.max(width, 0);  // Ensure non-negative values
     }
 
     public void setHeight(double height) {
-        this.height = height >= 0 ? height : 0;  // Ensure non-negative values
+        this.height = Math.max(height, 0);  // Ensure non-negative values
     }
 
     public double getArea() {
